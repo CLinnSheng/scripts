@@ -1,0 +1,11 @@
+#!/bin/bash
+
+current_branch=$(git rev-parse --abbrev-ref HEAD)
+
+read -p "Git Commit Message: " COMMIT
+
+git add .
+git commit -m "$COMMIT"
+git push origin $current_branch
+
+read -p "Pushed"
