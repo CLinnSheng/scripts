@@ -8,4 +8,4 @@ git add .
 git commit -m "$COMMIT"
 git push origin $current_branch
 
-read -p "Pushed"
+read -p "Pushed! Press Enter to Exit"
